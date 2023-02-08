@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>How many operators do we have in JS ?</h1>
+   <pre>
+    1. Arithmetic Operators : + - * / %
+    2. Comparison Operators : == === != !==
+    3. Logical Operators : && || !
+    4. Assignment Operators : =
+    5. Conditional Operators
+    6. Ternary Operator ?:
+   </pre>
+   <h1>What are pure functions?</h1>
+   <pre>
+    a pure function is a function thats return the same output as given as the same input.this pure function 
+    is only deppend on its input arguments only
+   </pre>
+   <h1>What is callback hell</h1>
+   <pre>
+    Callback Hell is a pattern with multiple nested callbacks which makes code hard to read and
+    debug when dealing with asynchronous logic. The callback hell looks like a pyramid structure.
+   </pre>
+   <h1>What is promise chaining</h1>
+   <pre>
+    The process of executing a sequence of asynchronous tasks one after another using promises is
+    known as Promise chaining
+   </pre>
+   <h1>What are arrow functions?</h1>
+   <pre>
+    Arrow Functions — also called “fat arrow” functions, are relatively a new way of writing
+    concise functions in JavaScript. They have been introduced by the ECMAScript 6
+    specifications and since then become the most popular ES6 feature. Arrow functions allow us
+    to use the fat arrow => operator to quickly define JavaScript functions, with or without
+    parameters. We are able to omit the curly braces and the function and return keywords.
+   </pre>
+   <h1>Give an example of async/await</h1>
+   <pre>
+    function resolveAfter2Seconds()
+    return new Promise(resolve =>
+    {
+    setTimeout(() => {
+    resolve('resolved')
+    }, 2000);
+    });
+    }
+    async function asyncCall() {
+    console.log('calling');
+    const result = await resolveAfter2Seconds();
+    console.log(result);
+    // expected output: "resolved"
+   </pre>
+   <h1>What is a Temporal Dead Zone?</h1>
+ <pre>
+    The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable
+    with the let and const keywords, but not with var. In ECMAScript 6, accessing a let or const
+    variable before its declaration (within its scope) causes a ReferenceError. The time span when
+    that happens, between the creation of a variable's binding and its declaration, is called the
+    temporal dead zone.
+ </pre>
+</body>
+</html>
